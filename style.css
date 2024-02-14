@@ -1,0 +1,86 @@
+body{
+    overflow-x: hidden;
+    background: linear-gradient(
+        to right,
+        blue 0%,
+        blue 70%,
+        yellow 30%,
+        yellow 100%
+    );
+}
+.image-frame:hover{
+    transition: 0.3s;
+    scale: 1.2;
+}
+.prom{
+    color: yellow;
+}
+.portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    border: 1px solid #0C9DDA;
+    height: 170px;
+    border-radius: 30px;
+    transition: 0.5s;
+    background-color: yellow;
+}
+.cardet{
+   background-color: yellow;
+    border: 0.2px solid #0C9DDA;
+    height: 200px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+/* Styling for the typewriter text */
+.sec-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Start with a transparent border */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  /* Typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Blinking cursor animation */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange; /* Adjust cursor color */
+    }
+  }
+  
+  
+  
+/* Style for the frame container */
+.image-frame { /* Adjust height as needed */
+    border-top: 4px double #000; /* Border style */
+    border-radius: 10px; /* Border radius to make rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Style for the image inside the frame */
+.image-frame img {
+    width: 70%; /* Make the image fill the frame */
+    height: 100%; /* Make the image fill the frame */
+    object-fit: cover; /* Scale the image while preserving its aspect ratio */
+}
+span{
+    color: blue;
+    font-weight: 600;
+}
