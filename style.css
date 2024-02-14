@@ -4,8 +4,8 @@ body{
         to right,
         blue 0%,
         blue 70%,
-        yellow 30%,
-        yellow 100%
+        orange 30%,
+        orange 100%
     );
 }
 .image-frame:hover{
@@ -13,7 +13,7 @@ body{
     scale: 1.2;
 }
 .prom{
-    color: yellow;
+    color: orange;
 }
 .portfolio{
     display: flex;
@@ -83,4 +83,19 @@ body{
 span{
     color: blue;
     font-weight: 600;
+}
+
+@media (max-width: 780px) {
+    body{
+       background: linear-gradient(
+        blue,
+        blue
+       );
+    }
+    .sec-text{
+        display: none;
+    }
+    span{
+        color: white;
+    }
 }
